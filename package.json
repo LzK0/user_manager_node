@@ -1,0 +1,26 @@
+{
+  "name": "user_manager_node",
+  "version": "1.0.0",
+  "description": "training NodeJs.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./src/server.ts"
+  },
+  "author": "Victor Rodrigues",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.5",
+    "prisma": "^5.19.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/method-override": "^0.0.35",
+    "@types/node": "^22.5.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "helmet": "^7.1.0",
+    "method-override": "^3.0.0",
+    "ts-node": "^10.9.2"
+  }
+}

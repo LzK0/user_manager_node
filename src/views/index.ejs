@@ -1,10 +1,219 @@
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IndexPage</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e2e2e2;
+        }
+
+        #container {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+            /* gap: 70px; */
+        }
+
+        #container-form {
+            width: 70%;
+            height: 20%;
+            background-color: #fcfcf4;
+            border-radius: 7px;
+            box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.15);
+        }
+
+        #container-form form {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container-form div {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        #container-form div span {
+            float: left;
+            width: 70%;
+        }
+
+        #container-form div input {
+            width: 70%;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.40);
+        }
+
+        #container-form button {
+            width: 70%;
+            height: 30px;
+            border: none;
+            background-color: #089bff;
+            border-radius: 3px;
+            transition: all .4s;
+            cursor: pointer;
+        }
+
+        #container-form button:hover {
+            background-color: #2286e3;
+        }
+
+        #container-table {
+            margin-top: 60px;
+            width: 53%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            background-color: #fcfcf4;
+            box-shadow: -2px 3px 2px rgba(0, 0, 0, 0.15);
+            margin-bottom: 20px;
+        }
+
+        #container-table table {
+            width: 85%;
+            height: 80%;
+        }
+
+        tr,
+        th,
+        td {
+            padding: 10px 20px;
+        }
+
+        th, td {
+          text-align: center;
+        }
+
+        th {
+            border-bottom: 1px solid black;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 5px 15px;
+            background-color: white;
+            border-radius: 4px;
+            color: black;
+            transition: all .3s;
+        }
+
+        a:hover {
+            background-color: #f6f2f2;
+        }
+    </style>
 </head>
+
 <body>
-    Hello world!
+    <main>
+        <section id="container">
+            <section id="container-form">
+                <form action="" method="post">
+                    <div>
+                        <span>Nome</span>
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        <span>Email</span>
+                        <input type="email" name="email">
+                    </div>
+                    <div>
+                        <span>Telefone</span>
+                        <input type="text" name="phone">
+                    </div>
+                    <div>
+                        <span>Aniversário</span>
+                        <input type="date" name="birthday">
+                    </div>
+                    <div>
+                        <button type="submit" name="">Enviar</button>
+                    </div>
+                </form>
+            </section>
+            <section id="container-table">
+                <table>
+                    <thead>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Aniversário</th>
+                        <th>Editar</th>
+                        <th>Apagar</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="container-paginator">
+                <ul>
+                    <li><a href="">1</a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="">1</a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
 </body>
+
 </html>
